@@ -2,7 +2,7 @@ module Rich
   class FilesController < ApplicationController
 
     before_filter :authenticate_rich_user
-    before_action :set_rich_file, only: [:show, :destroy]
+    before_filter :set_rich_file, only: [:show, :destroy]
 
     layout "rich/application"
     
